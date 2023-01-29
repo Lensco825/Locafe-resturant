@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@300;400;700&family=Poppins:wght@400;700&family=Raleway:ital,wght@0,200;0,300;0,400;1,200&family=Roboto&family=Satisfy&family=Sofia+Sans&display=swap');
+
+
+:root {
+  --darkBlue: #023047;
+  --darkGreen: #264653;
+  --green: #2a9d8f;
+  --forestGreen: #588157;
+  --greenTea: #606c38;
+  --boldYellow: #ffb703;
+  --creamyWhite: #fefae0;
+  --orangeHazel: #ffcdb2;
+  --paleWhite: #f1faee;
+  --lightBrown: #ddb892;
+  --mintGreen: #d8e2dc;
+  --nightBlue: #22223b;
+  --cityBlue: #03045e;
+  --sunsetOrange: #e56b6f;
+  --atlanticBle: #0081a7;
+  --pink: #ffcad4;
+  --black: #000814;
+  --darkGray: #343a40;
+  --gray: #6c757d;
+  --boldRed: #ef233c;
+  --orange: #f4a261;
+}
+
+* {
+  cursor: none;
+}
+
+
+.logo_img {
+  width: 50px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  height: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Raleway';
+  color: white;
+  background-color: var(--black);
+}
+
+
+nav > p:hover {
+  color: var(--boldYellow);
+}
+
+
+nav > p {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.darkMode {
+  font-size: 23px;
+  transition: 0.3;
+}
+
+
+
+.home {
+  height: 50rem;
+  display: flex;
+  place-items: center;
+  transition: 0.5s;
+}
+
+.dark {
+  background-color: var(--black);
+  color: white;
+}
+
+.intro {
+  width: 30rem;
+}
+
+.intro > p {
+  font-family: 'Raleway';
+  font-size: 20px;
+}
+
+.intro > h1 {
+  font-family: 'Poppins';
+  font-size: 70px;
+}
+
+
+.intro_pictures > img {
+  width: 160px;
+  position: relative;
+  left: 70px;
+  border-radius: 10px;
+}
+
+
+.intro_pictures > img:nth-child(1) {
+  bottom: 50px;
+}
+
+.intro_pictures > img:nth-child(2) {
+  top: 50px;
+  z-index: 2;
+  right: 50px;
+}
+
+@media (max-width: 845px) {
+  .intro_pictures > img:nth-child(2) {
+    bottom: 46rem;
+  }
+  .intro_pictures > img:nth-child(4) {
+    top: 4rem
+  }
+  .intro_pictures > img:nth-child(1) {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 596px) {
+  .intro > h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 790px) {
+  .intro_pictures > img {
+    left: 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  .intro_pictures > img:nth-child(2) {
+    width: 100px;
+    z-index: 5;
+    right: 100px;
+  }
+  .intro_pictures > img:nth-child(4) {
+    top: 100px;
+  }
+}
+
+
+
+
+  .intro_pictures > img {
+    position: absolute;
+    border-radius: 10px;
+  }
+  .intro_pictures > img:nth-child(1) {
+    left: 340px;
+     bottom: 12rem;
+  }
+  .intro_pictures > img:nth-child(2) {
+    top: 110px;
+    left: 60px;
+    width: 130px;
+  }
+  .intro_pictures > img:nth-child(3) {
+    top: 640px;
+    left: 90px;
+    width: 8rem;
+  }
+  .intro_pictures > img:nth-child(4) {
+    width: 8rem;
+    left: 20rem;
+    top: 38rem;
+  }
+  .intro {
+    width: 100%;
+    text-align: center;
+  }
+
+
+.courses {
+  text-align: center;
+  font-family: 'Montserrat';
+  display: grid;
+  row-gap: 5rem;
+}
+
+
+.mainCourse_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  place-items: center;
+}
+
+.main_course {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  transition: 0.4s ease-out;
+}
+
+.main_course:nth-child(1) {
+  background-image: url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80');
+  background-size: cover;
+}
+
+.main_course:nth-child(2) {
+background-size: cover;
+background-image: url('https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+}
+
+.main_course:nth-child(3) {
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+}
+
+.country_course {
+  width: 150px;
+  height: 150px;
+  border: solid;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.country_container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  row-gap: 60px;
+  width: 100%;
+  height: 40rem;
+}
+
+.country_course:before,.main_course::before {
+  content: '';
+  position: relative;
+  top: 11rem;
+  left: 1;
+  font-family: 'raleway';
+  font-size: 15px;
+}
+
+.main_course:nth-child(1):before {
+  content: 'Breakfest';
+}
+
+.main_course:nth-child(2):before {
+  content: 'Lunch';
+}
+
+.main_course:nth-child(3):before {
+  content: 'Vegan';
+}
+
+.country_course > p, .main_course > p {
+  padding: 5px;
+  background-color: var(--darkBlue);
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  left: 45px;
+  top: 80px;
+  width: 40px;
+  transition: 0.2s;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.main_course > p {
+  top: 70px;
+  left: 55px;
+}
+
+.country_course:hover > p, .main_course:hover > p {
+  opacity: 1;
+}
+
+.main_course:nth-child(1):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--atlanticBle);
+}
+
+.main_course:nth-child(2):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--boldYellow);
+}
+
+
+.main_course:nth-child(3):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--forestGreen);
+}
+
+.country_course:nth-child(1):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--boldRed);
+}
+
+.country_course:nth-child(2):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--atlanticBle);
+}
+
+
+.country_course:nth-child(3):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--boldYellow);
+}
+
+
+.country_course:nth-child(4):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--orange);
+}
+
+
+.country_course:nth-child(5):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--green);
+}
+
+
+.country_course:nth-child(6):hover {
+  margin-bottom: 20px;
+  box-shadow: 20px 20px var(--pink);
+}
+
+.country_course:nth-child(1) {
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1623689043725-743d4aa0d91a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80');
+}
+
+.country_course:nth-child(2) {
+  background-size: cover;
+  background-image: url('https://www.sprinklesandsprouts.com/wp-content/uploads/2022/07/French-Palmiers-SQ.jpg');
+}
+
+.country_course:nth-child(3) {
+  background-size: cover;
+  background-image: url('https://www.recipetineats.com/wp-content/uploads/2016/08/Churros_9-SQ.jpg');
+}
+
+.country_course:nth-child(4) {
+  background-size: cover;
+  background-image: url('https://www.experiencefayetteville.com/images/joomlart/article/937f929d420ab20a5c9d96a1ab9e2021.jpg');
+}
+
+.country_course:nth-child(5) {
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1624300629298-e9de39c13be5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+}
+
+.country_course:nth-child(6) {
+  background-size: cover;
+  background-image: url('https://www.azamara.com/sites/default/files/heros/gettyimages-1066110176.jpg');
+}
+
+.country_course:nth-child(1):before {
+  content: 'Chinese';
+}
+
+.country_course:nth-child(2):before {
+  content: 'French';
+}
+
+.country_course:nth-child(3):before {
+  content: 'Spanish';
+}
+
+
+.country_course:nth-child(4):before {
+  content: 'Italien';
+}
+
+
+.country_course:nth-child(5):before {
+  content: 'Mexican';
+}
+
+
+.country_course:nth-child(6):before {
+  content: 'Japenese';
+}
+
+@media (max-width: 515px) {
+  .country_container {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5rem;
+  }
+  .intro_pictures > img:nth-child(1) {
+    left: 250px;
+  }
+  .intro_pictures > img:nth-child(4) {
+    left: 15rem;
+  }
+  .mainCourse_container {
+    grid-template-columns: 1fr;
+    row-gap: 3.5rem;
+  }
+  footer > h1 {
+    font-size: 20px;
+  }
+}
+
+.ice_cream {
+  background-color: var(--creamyWhite);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40rem;
+}
+
+.ice_cream_intro {
+  font-family: 'Montserrat';
+  width: 10rem;
+}
+
+.ice_cream > img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.valentines {
+background-color: var(--boldRed);
+height: 30rem;
+}
+
+.love_text {
+  font-family: Raleway;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Poppins';
+  background-color: var(--black);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: var(--green);
+}
+
+
+.cursor_1, .cursor_2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--black);
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.cursor_2 {
+  background-color: var(--boldYellow);
+  transition: 0.1s;
+  z-index: 3;
+}
+
+.cursor_dark {
+  background-color: var(--sunsetOrange);
+}
+
+.text-cursor {
+  background-color: transparent;
+  border: solid 0.5px var(--pink);
+}
+
+.text-cursor_dark {
+  color: var(--forestGreen);
+}
+
+.text-cursor_2 {
+  display: none;
+}
