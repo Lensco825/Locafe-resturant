@@ -95,35 +95,6 @@ nav > p {
 }
 
 
-.intro_pictures > img {
-  width: 160px;
-  position: relative;
-  left: 70px;
-  border-radius: 10px;
-}
-
-
-.intro_pictures > img:nth-child(1) {
-  bottom: 50px;
-}
-
-.intro_pictures > img:nth-child(2) {
-  top: 50px;
-  z-index: 2;
-  right: 50px;
-}
-
-@media (max-width: 845px) {
-  .intro_pictures > img:nth-child(2) {
-    bottom: 46rem;
-  }
-  .intro_pictures > img:nth-child(4) {
-    top: 4rem
-  }
-  .intro_pictures > img:nth-child(1) {
-    bottom: 1rem;
-  }
-}
 
 @media (max-width: 596px) {
   .intro > h1 {
@@ -131,50 +102,7 @@ nav > p {
   }
 }
 
-@media (max-width: 790px) {
-  .intro_pictures > img {
-    left: 10px;
-  }
-}
-
-@media (max-width: 670px) {
-  .intro_pictures > img:nth-child(2) {
-    width: 100px;
-    z-index: 5;
-    right: 100px;
-  }
-  .intro_pictures > img:nth-child(4) {
-    top: 100px;
-  }
-}
-
-
-
-
-  .intro_pictures > img {
-    position: absolute;
-    border-radius: 10px;
-  }
-  .intro_pictures > img:nth-child(1) {
-    left: 340px;
-     bottom: 12rem;
-  }
-  .intro_pictures > img:nth-child(2) {
-    top: 110px;
-    left: 60px;
-    width: 130px;
-  }
-  .intro_pictures > img:nth-child(3) {
-    top: 640px;
-    left: 90px;
-    width: 8rem;
-  }
-  .intro_pictures > img:nth-child(4) {
-    width: 8rem;
-    left: 20rem;
-    top: 38rem;
-  }
-  .intro {
+    .intro {
     width: 100%;
     text-align: center;
   }
@@ -392,12 +320,6 @@ background-image: url('https://images.unsplash.com/photo-1594212699903-ec8a3eca5
     grid-template-columns: 1fr 1fr;
     margin-bottom: 5rem;
   }
-  .intro_pictures > img:nth-child(1) {
-    left: 250px;
-  }
-  .intro_pictures > img:nth-child(4) {
-    left: 15rem;
-  }
   .mainCourse_container {
     grid-template-columns: 1fr;
     row-gap: 3.5rem;
@@ -413,6 +335,8 @@ background-image: url('https://images.unsplash.com/photo-1594212699903-ec8a3eca5
   align-items: center;
   justify-content: space-around;
   height: 40rem;
+  background-color: #fefae0;
+background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.58'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .ice_cream_intro {
@@ -489,4 +413,10 @@ li:hover {
 
 .text-cursor_2 {
   display: none;
+}
+
+@media (max-width: 450px) {
+    .ice_cream > img {
+        width: 140px;
+    }
 }
