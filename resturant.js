@@ -2,6 +2,8 @@ var html = document.querySelector('html');
  var pageSize = html.getBoundingClientRect().width;
  var home = document.querySelector('.home');
  var courses = document.querySelector('.courses');
+ var love = document.querySelector('.valentines');
+ var button = document.querySelector('button');
 
  console.log(pageSize);
 
@@ -12,6 +14,8 @@ var html = document.querySelector('html');
   courses.classList.toggle('dark');
   cursor.classList.toggle('cursor_dark');
   cursor.classList.toggle('text-cursor_dark');
+  button.classList.toggle('darkness');
+  love.classList.toggle('love_dark');
  })
 
  var cursor = document.querySelector('.cursor_1');
